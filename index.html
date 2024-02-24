@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>CADASTRO FORNECEDOR/PRODUTO</title>
+</head>
+
+<body>
+    <h1>CADASTRO FORNECEDOR/PRODUTO</h1>
+    <h2 class="teste">Dados do Fornecedor</h2>
+    <div class="dados">
+        <form id="meuFormulario">
+            <label for="razaoSocial">Razão Social</label><input type="text" id="razaoSocial" name="razaoSocial"
+                placeholder="Razão Social"><br>
+            <label for="cnpj">CNPJ</label><input type="text" id="cnpj" name="cnpj" placeholder="CNPJ"><br>
+            <label for="nomeFantasia">Nome Fantasia</label><input type="text" id="nomeFantasia" name="nomeFantasia"
+                placeholder="Nome Fantasia"><br>
+            <label for="inscricaoEstadual">Inscrição Estadual</label><input type="text" id="inscricaoEstadual"
+                name="inscricaoEstadual" placeholder="Inscrição Estadual"><br>
+            <label for="inscricaoMunicipal">Inscrição Municipal</label><input type="text" id="inscricaoMunicipal"
+                name="inscricaoMunicipal" placeholder="Inscrição Municipal"><br>
+            <label for="cep">CEP</label><input type="text" id="cep" name="cep" placeholder="CEP"><br>
+            <label for="endereco">Endereço</label><input type="text" id="endereco" name="endereco"
+                placeholder="Endereço"><br>
+            <label for="numero">Número</label><input type="text" id="numero" name="numero" placeholder="Número"><br>
+            <label for="complemento">Complemento</label><input type="text" id="complemento" name="complemento"
+                placeholder="Complemento"><br>
+            <label for="bairro">Bairro</label><input type="text" id="bairro" name="bairro" placeholder="Bairro"><br>
+            <label for="municipio">Municipio</label><input type="text" id="municipio" name="municipio"
+                placeholder="Municipio"><br>
+            <label for="estado">Estado</label><input type="text" id="estado" name="estado" placeholder="Estado"><br>
+            <label for="pessoaContato">Pessoa para Contato</label><input type="text" id="pessoaContato"
+                name="pessoaContato" placeholder="Pessoa para Contato"><br>
+            <label for="telefone">Telefone</label><input type="text" id="telefone" name="telefone"
+                placeholder="Telefone"><br>
+            <label for="email">E-mail</label><input type="text" id="email" name="email" placeholder="E-mail"><br>
+        </form>
+    </div>
+    <div>
+        <h3>Produtos</h3>
+        <div>
+            <span style='font-size:20px;'>&#128465;</span>
+            <p>Produto - 1</p>
+            <span style='font-size:50px;'>&#128230;</span>
+            <label for="produtoUm">Produto</label><input type="text" id="produtoUm" name="produtoUm"
+                placeholder="Produto" class="testeinput">
+            <label for="undMedidaUm">UND. Medida</label><input type="text" id="undMedidaUm" name="undMedidaUm"
+                placeholder="UND. Medida" class="testetres">
+            <label for="qdtdeEstoqueUm">QDTDE. em Estoque</label><input type="text" id="qdtdeEstoqueUm"
+                name="qdtdeEstoqueUm" placeholder="QDTDE. em Estoque" class="testetres">
+            <label for="valorUnitarioUm">Valor Unitário</label><input type="text" id="valorUnitarioUm"
+                name="valorUnitarioUm" placeholder="Valor Unitário" class="testetres">
+            <label for="valorTotalUm">Valor Total</label><input type="text" id="valorTotalUm" name="valorTotalUm"
+                placeholder="Valor Total" class="testetres">
+
+
+        </div>
+        <div>
+            <span style='font-size:20px;'>&#128465;</span>
+            <p>Produto - 2</p>
+            <span style='font-size:50px;'>&#128230;</span>
+            <label for="produtoDois">Produto</label><input type="text" id="produtoDois" name="produtoDois"
+                placeholder="Produto" class="testeinput">
+            <label for="undMedidaDois">UND. Medida</label><input type="text" id="undMedidaDois" name="undMedidaDois"
+                placeholder="UND. Medida" class="testetres">
+            <label for="qdtdeEstoqueDois">QDTDE. em Estoque</label><input type="text" id="qdtdeEstoqueDois"
+                name="qdtdeEstoqueDois" placeholder="QDTDE. em Estoque" class="testetres">
+            <label for="valorUnitarioDois">Valor Unitário</label><input type="text" id="valorUnitarioDois"
+                name="valorUnitarioDois" placeholder="Valor Unitário" class="testetres">
+            <label for="valorTotalDois">Valor Total</label><input type="text" id="valorTotalDois" name="valorTotalDois"
+                placeholder="Valor Total" class="testetres">
+        </div>
+        <button class="salvar-button">Adicionar Produto</button>
+    </div>
+    <div>
+        <h4>Anexos</h4>
+        <p class="teste">Itens</p>
+        <span style='font-size:20px;'>&#128465;</span>
+        <span style='font-size:20px;'>&#128065;</span>
+        <p class="anexo">Documento anexo 1</p>
+        <span style='font-size:20px;'>&#128465;</span>
+        <span style='font-size:20px;'>&#128065;</span>
+        <p class="anexo">Documento anexo 2</p>
+
+        <label for="anexo">Incluir Anexo:</label>
+        <input type="file" id="anexo" name="anexo" accept=".pdf, .doc, .docx, .jpg, .jpeg, .png"><br>
+        </form>
+    </div>
+    <button id="salvarFornecedorBtn" class="salvar-button">Salvar Fornecedor</button>
+
+</body>
+<script src="./scripts.js"></script>
+
+</script>
+
+</html>
